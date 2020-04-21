@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/angieramirez1/Taller2Web/issues"
   },
-  "homepage": "https://github.com/angieramirez1/Taller2Web#readme"
+  "homepage": "https://github.com/angieramirez1/Taller2Web#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.3"
+  }
 }

@@ -1,0 +1,711 @@
+
+*{
+    box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+html,body{
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-family: "Futura Bold";
+}
+a:hover{
+    text-decoration: underline #c70707;
+}
+ul{
+    list-style-type: none;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+.nav{
+    padding: 0.2rem;
+    overflow: hidden;
+    background-image: url(../images/1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.logo{
+    display: block;
+    padding: 1rem 0;
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    
+}
+.nav .nav-logo{
+    padding: 50px;
+}
+.nav .nav-menu{
+    justify-content: space-between;
+    overflow: hidden;
+}
+.nav .nav-list{
+    display: flex;
+    margin: 0;
+}
+.nav .nav-list .nav-links{
+    padding: 20px 80px;
+    margin-top: 80px;
+    font-size: 30px;
+}
+
+input[type=text] {
+    font-family: "Futura Bold";
+    color: white;
+    width: 100%;
+    height: 62px;
+    box-sizing: border-box;
+    border: 2px solid #c70707;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    background-position: 230px 6px; 
+    padding: 12px 20px 12px 40px;
+    margin-top: 95px;
+  }
+  input[type=email] {
+    font-family: "Futura Bold";
+    text-align: center;
+    color: white;
+    width: 600px;
+    height: 62px;
+    box-sizing: border-box;
+    border: 2px solid #c70707;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 12px 20px 12px 40px;
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+  .first-banner{
+      position: absolute;
+      margin-left: 50%;
+      margin-top: 0px;
+      width: 900px;
+      
+  }
+  main .site-title{
+    width: 100%;
+    justify-content: right;
+    text-align: justify;
+    display: flex;
+    background-image: url(../images/2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 20%;
+  }
+  main .first-container{
+      text-align: left;
+      margin-top: 10%;
+      margin-left: 10%;
+  }
+  .description{
+      color: white;
+      font-family: "Futura Book";
+      font-size: 37px;
+  }
+  h1{
+      color: #db0000;
+      font-family: "Futura ExtraBlack";
+      font-size: 40px;
+      margin: 0px;
+      
+  }
+  .btn1{
+    background-color: rgba(255, 255, 255, 0%);
+    color: #db0000;
+    border-color: #db0000;
+    padding: 20px;
+    border-radius: 100px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    font-family: "Futura Book";
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+  .btn2{
+    background-color: white;
+    color: #000000;
+    border: none;
+    padding: 20px 60px;
+    border-radius: 100px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    font-family: "Futura Heavy";
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  .btn3{
+    background-color: #ce1206;
+    color: white;
+    border: none;
+    padding: 20px 60px;
+    border-radius: 100px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 25px;
+    font-family: "Futura Heavy";
+    margin: 4px 2px;
+    margin-bottom: 0;
+    cursor: pointer;
+  }
+  .btn4{
+    background-color: #ce1206;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    margin-left: 8%;
+    border-radius: 100px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 20px;
+    font-family: "Futura Heavy";
+    cursor: pointer;
+  }
+  .btn5{
+    background-color: #b82c11;
+    border-width: 10px;
+    border-style: solid;
+    border-color: rgb(238, 238, 238);
+    position: relative;
+    padding: 30px;
+    margin-left: 8%;
+    border-radius: 100%;
+    display: flex;
+    cursor: pointer;
+  }
+  .btn5--red{
+    background-color: rgb(255, 0, 0);
+  }
+  .btn5--orange{
+    background-color: rgb(255, 115, 0);
+  }
+  .btn5--blue{
+    background-color: rgb(0, 217, 255);
+  }
+  .item-price{
+    color:#ce1206;
+    font-size: 30px;
+    margin-left: 15%;
+  }
+  .splatoon-title{
+      width: 600px;
+      height: 300px;
+      margin-top: 0px;
+      margin-left: -60px;
+      
+  }
+  .best-seller{
+    display: flex;
+    justify-content: right;
+    background-image: url('../images/3.jpg');
+    padding-top: 0.5%;
+    height: 100%;
+    padding-bottom: 16%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .second-container{
+    margin-left: 10%;
+    width: 680px;
+  }
+  h2{
+      font-family: "Futura Heavy";
+      color: white;
+      font-size: 40px;
+      margin: 0px;
+      margin-left: 2.5%;
+      
+  }
+  
+  .best-selling{
+    padding-top: 10%;
+    font-size: 60px;
+  }
+  .best-selling2{
+    padding-top: 10%;
+    font-size: 60px;
+    color: #ce1206;
+  }
+  h3{
+    font-family: "Futura ExtraBlack";
+    color: #2f2f2f;
+    font-size: 60px;
+    padding: 50px;
+    
+  }
+  .slider-container{
+    background-image: url('../images/4.jpg');
+    background-size: cover;
+    
+    background-repeat: no-repeat;
+    padding-bottom: 22%;
+    height: 100%;
+  }
+  .slider-container2{
+    background-image: url('../images/5.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 16%;
+    
+  }
+  .slider{
+    overflow:hidden;
+    scroll-behavior: smooth;
+    display: grid;
+    grid-template-columns: repeat(3,100%);
+    margin-top: 50px;
+    
+    section{
+        position: relative;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(7,auto);
+        margin: 0%;
+        .item{
+          padding: 0px 2px;
+        }
+        a{
+          position: absolute;
+          color: #ffffff;
+          text-decoration: none;
+          font-size: 10em;
+          
+          width: 80px;
+          padding-top: 2%;
+          text-align: center;
+          z-index: 1;
+          &:nth-of-type(1){
+            top:0; bottom: 0; left: 0;
+            
+          }
+          &:nth-of-type(2){
+            top:0; bottom: 0; right: 0;
+                      }
+        }
+    }
+  }
+  .slider2{
+    overflow:hidden;
+    scroll-behavior: smooth;
+    display: grid;
+    grid-template-columns: repeat(3,100%);
+    margin-top: 50px;
+    
+    section{
+        position: relative;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(7,auto);
+        margin: 0%;
+        .item{
+          padding: 0px 2px;
+        }
+        a{
+          position: absolute;
+          color: #ffffff;
+          text-decoration: none;
+          font-size: 10em;
+          
+          width: 80px;
+          padding-top: 2%;
+          text-align: center;
+          z-index: 1;
+          &:nth-of-type(1){
+            top:0; bottom: 0; left: 0;
+            
+          }
+          &:nth-of-type(2){
+            top:0; bottom: 0; right: 0;
+                      }
+        }
+    }
+  }
+  
+  
+  .slogan{
+      flex-direction: column;
+      justify-content: right;
+      text-align: justify;
+      display: flex;
+      background-image: url('../images/6.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding-top: 15px;
+      height: 100%;
+  }
+  .switch{
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    margin-top: -60px;
+    margin-left: 20px;
+  }
+  .switch-container{
+      width: 1200px;
+  }
+  .systems{
+    text-align: left;
+    margin-left: 60px;
+    display: flex;
+  }
+  h4{
+    font-family: "Futura HeaveItalic";
+    color: white;
+    font-size: 40px;
+  }
+  h5{
+    font-family: "Futura Bold";
+    color: #cc3028;
+    font-size: 50px;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-bottom: 0;
+  }
+
+  .systems-description{
+      width: 820px;
+      margin-left: 80px;
+  }
+  .play{
+      background: #EE2D24;
+      display: flex;
+      padding-top: 15px;
+      padding-left: 15%;
+      height: 100%;
+      padding-bottom: 20%;
+  }
+  .play-item{
+    margin-top: 20%;
+  }
+  .play-image{
+    margin-top: 0%;
+    padding-right: 200px;
+    height: 200px;
+    
+  }
+  .play-titles{
+    margin: 0;
+  }
+  .interaction{
+      width: 100%;
+      //background-image: url('../images/8.jpg');
+      
+  }
+  .color-selector{
+    display: flex;
+    justify-content: center;
+  }
+  .color-text{
+    text-align: center;
+    margin-left: 8%;
+    padding-bottom: 5%;
+  }
+  #product{
+    align-items: center;
+    
+    height: 1000px;
+    margin-left: 15%;
+  }
+  .cart{
+      margin-bottom: 10%;
+      margin-left: 83%;
+  }
+  .table-container{
+    background-image: url('../images/9.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding-top: 40%;
+    padding-bottom: 10%;
+  }
+  .tabla{
+    
+    margin-left: 10%;
+    
+  }
+  .table{
+      font-family: "Futura HeaveItalic";
+      color: white;
+      margin-left: 10%;
+      text-align: center;
+      font-size: 40px;
+  }
+  td {
+    border: 1px solid rgba(255, 255, 255, 50);
+    width: 500px;
+    height: 100px;
+  }
+  th{
+      border: 1px solid white;
+      width: 900px;
+      text-align: left;
+  }
+  .sectionVideo{
+    justify-items: center;
+    background-image: url('../images/10.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .video{
+    width: 100%;
+  }
+  footer{
+    background-image: url('../images/11.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    width: 100%;
+  }
+
+  .logo-footer{
+    width: 800px;
+    align-content: center;
+
+  }
+
+  .footer-content{
+    width: 100%;
+    
+  }
+
+  .footer-title{
+      font-size: 22px;
+      margin-left: 180px;
+  }
+  .footer-input{
+    width: 100%;
+    display: flex;
+  }
+  .footer-terms{
+      width: auto;
+      text-align: left;
+      display: flex;
+      margin-top: 50px;
+      color: white;
+      font-family: "Futura HeaveItalic";
+  }
+  .social{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      background-image: url('../images/12.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+  .social-icons{
+    cursor: pointer;
+    padding-left: 60px;
+  }
+  .item-phone{
+    display: none;
+  }
+  .item-container{
+    display: none;
+  }
+  .btn1--phone{
+    display: none;  
+  }
+  @media screen and (max-width: 700px){
+    
+    .nav{
+      margin: 0;
+      background-image: none;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 0;
+    }
+    .item-container{
+      display: flex;
+      padding: 8%;
+    }
+    body{
+      background-image: url('../images/fondocel1.jpg');
+      background-repeat: no-repeat;;
+    }
+    .social{
+      background-color: #3F3F3F;
+    }
+    main .site-title{
+      background-image:none;
+    }
+    .best-seller{
+      background-image: none;
+      margin-top: 35%;
+      padding-bottom: 0;
+    }
+    .slider-container{
+      background-image: none;
+      margin-top: 30%;
+    }
+    .item-container{
+      padding-bottom: 30%;
+      display: flex;
+      margin-top: 10%;
+    }
+    .btn1--phone{
+      margin-left: 20%;
+      width: 50%;
+      display: block;
+    }
+    .slider{
+      display: none;
+    }
+    .slider2{
+      display: none;
+    }
+    .item-phone{
+      display: flex;
+      flex-direction: column;
+    }
+    .slider-container2{
+      background-image: none;
+    }
+    .slogan{
+      background-image: none;
+      
+    }
+    .table-container{
+      padding-top: 5%;
+    }
+    .cart{
+      display: none;
+    }
+    .footer-input{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .btn3{
+      width: 50%;
+      align-content: center;
+    }
+    #product{
+      width: 100%;
+      max-width: 1000px;
+      height: auto;
+    }
+    .systems{
+      display: flex;
+      flex-direction: column;
+
+    }
+    .systems-description{
+      margin: 0px;
+      justify-content: right;
+      text-align: justify;
+      display: flex;
+      padding-right: 5%;
+      width: 100%;
+    }
+    .sectionVideo{
+      background-image: none;
+    }
+    .table-container{
+      background-image: none;
+    }
+    .social{
+      background-image: none;
+    }
+    footer{
+      background-image: none;
+      
+    }
+    .play{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .nav-list, .search , .nav-logo, .nav-links{
+      display: none;
+    }
+    .nav .nav-list{
+      padding-bottom: 0;
+      
+    }
+    .show-menu-btn{
+      transition: 0.4s;
+      font-size: 50px;
+      cursor: pointer;
+      display: none;
+      color: white;
+    }
+    .show-menu-btn{
+      float: right;
+    }
+    .show-menu-btn i{
+      line-height: 100px;
+    }
+    .show-menu-btn{
+      float: right;
+    }
+    .first-banner{
+      display: none;
+    }
+
+    .phone-title{
+      color: white;
+      text-align: center;
+      margin-left: 10%;
+      margin-top: 5%;
+      display: flex;
+      font-family: Futura Book;
+    }
+    
+    .nav-list{
+      display: flex;
+      position: relative;
+      padding-bottom: 50%;
+    }
+
+    
+  }
+  @import 'fonts';
+
+  .show-menu-btn{
+    display: none;
+  }
+  
+  .phone-firstcontainer{
+    display: none;
+  }
+  .phone-title{
+    display: none;
+  }
+  
+
+  @media screen and (max-width:700px) {
+    
+    .show-menu-btn{
+      display: flex;
+    }
+    .phone-title{
+      display: block;
+      padding-left: 20%;
+    }
+    .phone-firstcontainer{
+      display: block;
+    }
+    
+  }

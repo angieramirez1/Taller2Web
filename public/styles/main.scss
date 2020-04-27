@@ -28,6 +28,13 @@ ul{
     flex-wrap: wrap;
     
 }
+.fondoShop{
+    background-image: url(../images/fondito.jpg);
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 .nav{
     padding: 0.2rem;
     overflow: hidden;

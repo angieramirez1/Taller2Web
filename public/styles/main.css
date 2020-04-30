@@ -19,11 +19,6 @@ a {
   color: white;
   font-family: "Futura Bold";
 }
-p{
-  color: #2B2B2B;
-  font-family: "Futura Bold";
-  font-size: 20px;
-}
 
 a:hover {
   -webkit-text-decoration: underline #c70707;
@@ -48,9 +43,17 @@ ul {
 
 .fondoShop {
   background-image: url(../images/fondito.jpg);
-  padding: 0.2rem;
   overflow: hidden;
   background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.nav {
+  padding: 0.2rem;
+  overflow: hidden;
+  background-image: url(../images/1.jpg);
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
 }
 
@@ -61,14 +64,53 @@ ul {
   height: 120px;
   margin: auto;
 }
-.nav {
-  padding: 0.2rem;
-  overflow: hidden;
-  background-image: url(../images/1.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+
+.search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
+
+.nav .nav_shop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.nav_shop-logo {
+  padding: 50px;
+}
+
+.nav_shop-list .nav_shop-links {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 40px;
+  margin-top: 80px;
+  font-size: 30px;
+}
+
+.nav_shop-menu {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav_shop-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+}
+
 .nav .nav-logo {
   padding: 50px;
 }
@@ -88,33 +130,6 @@ ul {
 }
 
 .nav .nav-list .nav-links {
-  padding: 20px 80px;
-  margin-top: 80px;
-  font-size: 30px;
-}
-.nav_shop {
-  padding: 0.2rem;
-  overflow: hidden;
-}
-.nav_shop .nav_shop-logo {
-  padding: 50px;
-}
-
-.nav_shop .nav_shop-menu {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  overflow: hidden;
-}
-
-.nav_shop .nav_shop-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0;
-}
-
-.nav_shop .nav_shop-list .nav_shop-links {
   padding: 20px 80px;
   margin-top: 80px;
   font-size: 30px;
@@ -150,15 +165,17 @@ input[type=email] {
   margin-top: 20px;
   margin-right: 20px;
 }
-.bannerShop{
+
+.bannerShop {
   background-image: url(../images/banner_shop.png);
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   padding: 10%;
 }
-.bannerShop__text{
-  margin-left: 18%;
-  margin-top: 4%;
+
+.bannerShop__text {
+  margin-left: 20%;
 }
 
 .first-banner {
@@ -202,8 +219,15 @@ h1 {
   font-size: 40px;
   margin: 0px;
 }
-.h1--white{
+
+.h1--white {
   color: white;
+}
+
+p {
+  font-family: "Futura Book";
+  color: #1f1f1f;
+  font-size: 25px;
 }
 
 .btn1 {
@@ -379,7 +403,7 @@ h3 {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (100%)[3];
-  grid-template-columns: repeat(3, 100%);
+      grid-template-columns: repeat(3, 100%);
   margin-top: 50px;
 }
 

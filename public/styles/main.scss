@@ -32,7 +32,6 @@ ul{
     background-image: url(../images/fondito.jpg);
     overflow: hidden;
     background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
 }
 .nav{
@@ -49,7 +48,32 @@ ul{
     width: 120px;
     height: 120px;
     margin: auto;
-    
+}
+.search{
+  display: flex;
+}
+.nav .nav_shop{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.nav_shop-logo{
+  padding: 50px;
+}
+.nav_shop-list .nav_shop-links{
+  justify-content: space-between;
+  padding-left: 40px;
+  margin-top: 80px;
+  font-size: 30px;
+}
+.nav_shop-menu{
+  justify-content: space-between;
+    overflow: hidden;
+    display: flex;
+}
+.nav_shop-list{
+  display: flex;
+  margin: 0;
 }
 .nav .nav-logo{
     padding: 50px;
@@ -95,6 +119,16 @@ input[type=text] {
     margin-top: 20px;
     margin-right: 20px;
   }
+  .bannerShop{
+    background-image: url(../images/banner_shop.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10%;
+  }
+  .bannerShop__text{
+    margin-left: 20%;
+  }
   .first-banner{
       position: absolute;
       margin-left: 50%;
@@ -128,7 +162,14 @@ input[type=text] {
       font-family: "Futura ExtraBlack";
       font-size: 40px;
       margin: 0px;
-      
+  }
+  .h1--white{
+    color: white;
+  }
+  p{
+    font-family: "Futura Book";
+    color: rgb(31, 31, 31);
+    font-size: 25px;
   }
   .btn1{
     background-color: rgba(255, 255, 255, 0%);

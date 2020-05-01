@@ -129,6 +129,23 @@ input[type=text] {
   .bannerShop__text{
     margin-left: 20%;
   }
+  .productContainer{
+    margin-left: 15%;
+  }
+  .back{
+    margin: 15%;
+  }
+  .productContainer_text{
+    display: flex;
+    
+    position: absolute;
+    margin: 10%;
+  }
+  .productContainer_content{
+    display: flex;
+    flex-direction: column;
+  }
+
   .first-banner{
       position: absolute;
       margin-left: 50%;

@@ -19,6 +19,10 @@ app.get('/store', function (req, res) {
   res.render('shop');
 });
 
+app.get('/product', function (req, res) {
+  res.render('product');
+});
+
 app.listen(3000, function () {
     console.log('servidor iniciado');
   });

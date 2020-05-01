@@ -178,6 +178,32 @@ input[type=email] {
   margin-left: 20%;
 }
 
+.productContainer {
+  margin-left: 15%;
+}
+
+.back {
+  margin: 15%;
+}
+
+.productContainer_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  margin: 10%;
+}
+
+.productContainer_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .first-banner {
   position: absolute;
   margin-left: 50%;

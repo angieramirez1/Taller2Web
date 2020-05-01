@@ -191,7 +191,7 @@ input[type=email] {
   display: -ms-flexbox;
   display: flex;
   position: absolute;
-  margin: 10%;
+  margin: 12%;
 }
 
 .productContainer_content {
@@ -202,6 +202,14 @@ input[type=email] {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 500px;
+  margin-top: 30px;
+}
+
+.buyProduct {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .first-banner {
@@ -253,7 +261,7 @@ h1 {
 p {
   font-family: "Futura Book";
   color: #1f1f1f;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .btn1 {
@@ -334,6 +342,11 @@ p {
   display: -ms-flexbox;
   display: flex;
   cursor: pointer;
+}
+
+.btn4--white {
+  background-color: #2B2B2B;
+  color: white;
 }
 
 .btn5--red {

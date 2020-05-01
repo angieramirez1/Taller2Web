@@ -137,13 +137,17 @@ input[type=text] {
   }
   .productContainer_text{
     display: flex;
-    
     position: absolute;
-    margin: 10%;
+    margin: 12%;
   }
   .productContainer_content{
     display: flex;
     flex-direction: column;
+    width: 500px;
+    margin-top: 30px;
+  }
+  .buyProduct{
+    display: flex;
   }
 
   .first-banner{
@@ -186,7 +190,7 @@ input[type=text] {
   p{
     font-family: "Futura Book";
     color: rgb(31, 31, 31);
-    font-size: 25px;
+    font-size: 20px;
   }
   .btn1{
     background-color: rgba(255, 255, 255, 0%);
@@ -258,6 +262,10 @@ input[type=text] {
     display: flex;
     cursor: pointer;
   }
+  .btn4--white{
+    background-color: #2B2B2B;
+    color: white;
+  }
   .btn5--red{
     background-color: rgb(255, 0, 0);
   }
@@ -277,7 +285,6 @@ input[type=text] {
       height: 300px;
       margin-top: 0px;
       margin-left: -60px;
-      
   }
   .best-seller{
     display: flex;
@@ -300,7 +307,6 @@ input[type=text] {
       font-size: 40px;
       margin: 0px;
       margin-left: 2.5%;
-      
   }
   
   .best-selling{
@@ -322,7 +328,6 @@ input[type=text] {
   .slider-container{
     background-image: url('../images/4.jpg');
     background-size: cover;
-    
     background-repeat: no-repeat;
     padding-bottom: 22%;
     height: 100%;
@@ -332,7 +337,6 @@ input[type=text] {
     background-size: cover;
     background-repeat: no-repeat;
     padding-bottom: 16%;
-    
   }
   .slider{
     overflow:hidden;

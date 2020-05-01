@@ -20,7 +20,13 @@ app.get('/store', function (req, res) {
 });
 
 app.get('/product', function (req, res) {
-  res.render('product');
+  var context = {
+    title: 'Titulo del juegos',
+    description: 'Descripción del juego',
+    price: 'Precio',
+    img: '/images/juego1.png'
+  }
+  res.render('product', context);
 });
 
 app.listen(3000, function () {

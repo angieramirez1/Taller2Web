@@ -4,6 +4,8 @@ const path = require('path');
 
 const exphbs = require('express-handlebars');
 
+const products = require('./products')
+
 const app = express();
 
 app.engine('handlebars', exphbs());
@@ -19,13 +21,14 @@ app.get('/store', function (req, res) {
   res.render('shop');
 });
 
-app.get('/product', function (req, res) {
-  var context = {
-    title: 'Titulo del juegos',
-    description: 'Descripción del juego',
-    price: 'Precio',
-    img: '/images/juego1.png'
-  }
+app.get('/product/:name', function (req, res) {
+  var context = {};
+  var foundElement =  products.find(function(elem){
+    if(elem.title == req.params.name){
+      return true;
+    }
+  });
+  context = foundElement;
   res.render('product', context);
 });
 

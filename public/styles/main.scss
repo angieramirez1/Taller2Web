@@ -149,6 +149,15 @@ input[type=text] {
   .buyProduct{
     display: flex;
   }
+  .productlist{
+    display: flex;
+    text-align: center;
+    
+  }
+  .thumb{
+    border: #c70707;
+    margin: auto;
+  }
 
   .first-banner{
       position: absolute;

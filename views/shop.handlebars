@@ -5,4 +5,11 @@
             just add it to the cart! We hope you have fun.</p>
         </div>
 </div>
-{{titulo}}
+<main class="productlist">
+    {{#each products}}
+    <div class="thumb">
+        <img class="thumb__img" src="{{img}}" >
+        <h2 class="thum_price">{{price}}</h2>
+    </div>
+    {{/each}}
+</main>

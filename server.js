@@ -18,7 +18,10 @@ app.get('/home', function (request, response) {
 });
 
 app.get('/store', function (req, res) {
-  res.render('shop');
+  var context = {
+    products: products,
+  }
+  res.render('shop', context);
 });
 
 app.get('/product/:name', function (req, res) {

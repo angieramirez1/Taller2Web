@@ -212,6 +212,18 @@ input[type=email] {
   display: flex;
 }
 
+.productlist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+
+.thumb {
+  border: #c70707;
+  margin: auto;
+}
+
 .first-banner {
   position: absolute;
   margin-left: 50%;

@@ -182,6 +182,32 @@ input[type=email] {
   margin-left: 15%;
 }
 
+.product_section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.store_menu {
+  background-image: url(../images/fondomenu.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 700px;
+}
+
+.filter_menu {
+  color: #2B2B2B;
+  text-decoration: none;
+  font-family: Futura HeaveItalic;
+  margin-top: 100px;
+  padding: 10%;
+  font-size: 25px;
+}
+
+.filters {
+  color: #2B2B2B;
+}
+
 .back {
   margin: 15%;
 }
@@ -213,15 +239,24 @@ input[type=email] {
 }
 
 .productlist {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 247px 247px 247px 247px;
+      grid-template-columns: 247px 247px 247px 247px;
+  -ms-grid-rows: 400px 400px 400px 400px 400px;
+      grid-template-rows: 400px 400px 400px 400px 400px;
+  grid-row-gap: 20px;
   text-align: center;
+  margin-left: 100px;
 }
 
 .thumb {
-  border: #c70707;
   margin: auto;
+  text-align: center;
+}
+
+.thumb__link {
+  text-decoration: none;
 }
 
 .first-banner {

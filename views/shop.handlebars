@@ -19,8 +19,8 @@
             
             <li>Rating
                 <ul>
-                    <li><a href="http://" class="filters">Best reviewed</li></a>
-                    <li><a href="http://" class="filters">Average rating</li></a>
+                    <li><a href="/store/?rating_gt=3" class="filters">Best reviewed</li></a>
+                    <li><a href="/store/?rating_lt=4" class="filters">Average rating</li></a>
                 </ul>
             </li>
 
@@ -35,7 +35,7 @@
 <main class="productlist">
     {{#each list}}
     <div class="thumb">
-        <a href="/product/{{title}}/{{id}}" class="thumb__link">
+        <a href="/product/{{title}}/{{_id}}" class="thumb__link">
         <img class="thumb__img" src="{{img}}" width="247px" height="340px">
         <h2 class="thumb__price">{{price}}USD</h2>
         </a>

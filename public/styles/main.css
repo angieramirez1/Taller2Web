@@ -745,6 +745,7 @@ footer {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  margin-top: 10%;
 }
 
 .logo-footer {

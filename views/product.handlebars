@@ -7,7 +7,12 @@
             <p>{{description}}</p>
             <div class="buyProduct">
             <h2>{{price}}USD</h2>
-            <button class="btn4 btn4--white">add to cart <i class="fas fa-shopping-cart"></i></button>
+            <button class="btn4 btn4--white"
+            data-name="{{title}}"
+        data-price="{{price}}"
+        data-id="{{_id}}"
+        data-img="{{img}}">
+            add to cart <i class="fas fa-shopping-cart"></i></button>
         </div>
         </div>
     </div>

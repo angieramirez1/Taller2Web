@@ -63,6 +63,25 @@ function configureRoutes (app,db) {
           res.render('product', context);
         });
       });
+
+      app.get('/checkout', function(req,res){
+          res.render('checkout');
+      });
+
+      app.post('/checkout', function(req,res){
+        console.log(req.body.name);
+
+        req.body.creation_date = new Date();
+
+        if(!req.body.name || !req.body.cardnumber || !req.body.cvv || !req.body.expirationdate){
+            res.redirect('/checkout');
+            return;
+        }
+
+        const collection = db.collection('orders');
+        collection.insertOne(req.body);
+        res.redirect('/store');
+      });
 }
 
 module.exports = configureRoutes;

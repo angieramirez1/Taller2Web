@@ -177,6 +177,23 @@ input[type=text] {
     text-align: center;
     margin-left: 100px;
   }
+  .checkout_form{
+    max-width: 500px;
+    padding: 2rem;
+    margin: 2rem auto;
+    justify-content: center;
+    label{
+      display: block;
+      padding: 2rem 0 1rem;
+    }
+    input, textarea{
+      display: block;
+      width: 100%;
+      border-radius: 50px;
+      height: 50px;
+      text-align: center;
+    }
+  }
   .thumb{
     margin: auto;
     text-align: center;

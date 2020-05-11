@@ -73,10 +73,11 @@ function configureRoutes (app,db) {
 
         req.body.creation_date = new Date();
 
-        if(!req.body.name || !req.body.cardnumber || !req.body.cvv || !req.body.expirationdate){
+        if(!req.body.products || !req.body.name || !req.body.cardnumber || !req.body.cvv || !req.body.expirationdate){
             res.redirect('/checkout');
             return;
         }
+        req.body.products = JSON.parse(req.body.products)
 
         const collection = db.collection('orders');
         collection.insertOne(req.body);

@@ -430,6 +430,43 @@ p {
   background-color: #00d9ff;
 }
 
+.removeBtn {
+  background-color: #2B2B2B;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  margin-top: 100px;
+  cursor: pointer;
+}
+
+.sendBtn {
+  background-color: #ce1206;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  margin-left: 8%;
+  border-radius: 100px;
+  text-align: center;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 20px;
+  font-family: "Futura Heavy";
+  cursor: pointer;
+}
+
+.cart__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cart {
+  margin: 0;
+}
+
 .item-price {
   color: #ce1206;
   font-size: 30px;
@@ -710,11 +747,6 @@ h5 {
   margin-left: 15%;
 }
 
-.cart {
-  margin-bottom: 10%;
-  margin-left: 83%;
-}
-
 .table-container {
   background-image: url("../images/9.jpg");
   background-size: cover;
@@ -801,6 +833,22 @@ footer {
   margin-top: 50px;
   color: white;
   font-family: "Futura HeaveItalic";
+}
+
+.div_cart {
+  margin-left: 0px;
+}
+
+.cart__text {
+  font-size: 20px;
+}
+
+.cart_button {
+  border-radius: 100%;
+  background-color: #2f2f2f;
+  color: blanchedalmond;
+  width: 7%;
+  height: 100%;
 }
 
 .social {

@@ -11,5 +11,4 @@ form.addEventListener('submit', function () {
     var input = document.querySelector('.checkoutform__products');
     input.value = localStorage.getItem('cartList');
     localStorage.removeItem('cartList');
-    alert('peti');
 });

@@ -590,9 +590,6 @@ input[type=text] {
     height: 1000px;
     margin-left: 15%;
   }
-  .cart{
-
-  }
   .table-container{
     background-image: url('../images/9.jpg');
     background-size: cover;
@@ -877,6 +874,40 @@ input[type=text] {
     }
     .phone-firstcontainer{
       display: block;
+    }
+    .productlist{
+      display: grid;
+      grid-template-columns: 247px 247px ;
+      grid-template-rows: 400px 400px ;
+      grid-row-gap: 50px ;
+      text-align: center;
+      margin-left: 0px;
+    }
+    .filter_menu{
+      display: none;
+    }
+    .bannerShop{
+      display: none;
+    }
+  .nav_shop{
+      display: none;
+    }
+    .nav-list{
+      display: flex;
+      position: relative;
+      padding-bottom: 50%;
+    }
+    .productContainer_text{
+      display: flex;
+      position: relative;
+      flex-direction: column;
+
+    }
+    .product_section{
+      display: flex;
+    }
+    .product_background{
+      display: none;
     }
     
   }
